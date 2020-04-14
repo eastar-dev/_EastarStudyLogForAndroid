@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "605162787282",
+    "firebase_url": "https://studypush-r.firebaseio.com",
+    "project_id": "studypush-r",
+    "storage_bucket": "studypush-r.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605162787282:android:8a38d04464e1df62d4f80b",
+        "android_client_info": {
+          "package_name": "dev.eastar.studypush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605162787282-9lvoo6o5as83c0uihahjloq6la7qhd0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfc-joOSY2sMsutzxVIXOF7so_9gFZnAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605162787282-9lvoo6o5as83c0uihahjloq6la7qhd0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

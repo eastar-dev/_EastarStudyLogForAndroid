@@ -1,2 +1,4 @@
 include ':app'
-rootProject.name='DayStudyLog'
+include ':base'
+include ':common'
+rootProject.name = "studypush"

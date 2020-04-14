@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_hana_n">@color/c_hana_lite</color>
+    <color name="text_hana_p">@color/c_hana_accent</color>
+    <color name="text_hana_d">@color/c_hana_disable</color>
+</resources>

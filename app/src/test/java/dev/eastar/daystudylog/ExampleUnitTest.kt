@@ -1,4 +1,4 @@
-package dev.eastar.daystudylog
+package dev.eastar.studypush
 
 import org.junit.Test
 

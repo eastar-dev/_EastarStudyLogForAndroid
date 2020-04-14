@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#0000</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <drawable name="white">#fff</drawable>
+    <drawable name="black">#000</drawable>
+    <drawable name="transparent">#0000</drawable>
+    <color name="white_dark">#e4e5e7</color>
+    <dimen name="title">60dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="space">8dp</dimen>
+    <dimen name="margin_activity">24dp</dimen>
+    <dimen name="h1">22sp</dimen>
+    <dimen name="h2">19sp</dimen>
+    <dimen name="h3">17sp</dimen>
+    <dimen name="h4">15sp</dimen>
+    <dimen name="h5">13sp</dimen>
+    //스플레쉬 배경
+    <drawable name="c_hana_bg">#00d89c</drawable>
+    <color name="c_hana_bg">#00d89c</color>
+    <color name="c_hana_lite">#01ba87</color>
+    <color name="c_hana">#009688</color>
+    <color name="c_hana_dark">#00796b</color>
+    <color name="c_hana_accent">#00d89c</color>
+    <color name="c_hana_disable">#b4bdc6</color>
+    <color name="text_hana_white">#fff</color>
+    <color name="text_hana_black">#333</color>
+
+    <style name="BTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/c_hana</item>
+        <item name="colorPrimaryDark">@color/c_hana_dark</item>
+        <item name="colorAccent">@color/c_hana_accent</item>
+        <item name="android:windowBackground">@drawable/white</item>
+        <!--<item name="android:textViewStyle">@style/TextViewStyle</item>-->
+        <!--<item name="android:buttonStyle">@style/ButtonStyle</item>-->
+        <!--<item name="android:editTextStyle">@style/EditTextStyle</item>-->
+        <!--<item name="android:radioButtonStyle">@style/RadioButtonStyle</item>-->
+        <!--<item name="android:checkboxStyle">@style/CheckboxStyle</item>-->
+    </style>
+
+    <style name="BTheme.Transparent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="BTheme.Transparent.Dialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <!--<style name="BTheme.Splash">-->
+    <!--<item name="android:windowBackground">@drawable/c_hana_bg</item>-->
+    <!--<item name="android:windowFullscreen">true</item>-->
+    <!--<item name="android:windowContentOverlay">@null</item>-->
+    <!--</style>-->
+    <style name="BTheme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="CardViewStyle" parent="CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+</resources>
+
+
