@@ -3,8 +3,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/c_hana">
+        android:layout_height="60dp">
 
         <ImageView
             android:id="@+id/title_image"
@@ -30,7 +29,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:layout_gravity="bottom"
-            android:background="@color/c_hana_accent" />
+            android:layout_gravity="bottom" />
     </FrameLayout>
 </layout>

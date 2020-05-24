@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--삭제예정-->
-    <style name="title_layer">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/title</item>
-        <item name="android:layout_marginStart">@dimen/margin_activity</item>
-        <item name="android:background">@drawable/divider_double_bottom</item>
-    </style>
-    <!--삭제예정-->
-    <style name="title">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:paddingRight">10dp</item>
-        <item name="android:onClick">onHeaderTitle</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:textColor">@color/text_hana_black</item>
-        <item name="android:textSize">20sp</item>
-    </style>
-    //-------------------------------------------------------------------------------
 
     <style name="header_layer">
         <item name="android:layout_width">match_parent</item>
@@ -35,7 +15,6 @@
         <item name="android:paddingRight">@dimen/margin_activity</item>
         <item name="android:singleLine">true</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:textColor">@color/text_hana_black</item>
     </style>
 
     <style name="header_title" parent="@style/header_text">

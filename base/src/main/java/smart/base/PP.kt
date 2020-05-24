@@ -11,20 +11,19 @@ import java.util.*
 
 @Pref(defaultSharedPreferences = true)
 data class PPSharedPreferences(
-        //@formatter:off
-        val version100                    : Boolean,
-        val androidId                     : String,
-        val appUuid                       : String,
-        val isStarted                     : Boolean, // 앱 최초 실행 여부
-        val menu                          : String, // 최근 사용한 메뉴
-        val isReadedPush                  : Boolean, // 푸시 읽음 여부 (다 읽었으면 true, 안 읽었으면 false)
-        val pushToken                     : String,
-        val cmsData                       : String ,
-        val appInfo                       : String,
-        val isAutoLogin                   : Boolean, // 자동로그인설정여부
-        val lastLogin                     : String // 자동로그인설정여부
+    val pushToken: String,
+    val isReadedPush: Boolean, // 푸시 읽음 여부 (다 읽었으면 true, 안 읽었으면 false)
 
-        //@formatter:on
+
+    val version100: Boolean,
+    val androidId: String,
+    val appUuid: String,
+    val isStarted: Boolean, // 앱 최초 실행 여부
+    val menu: String, // 최근 사용한 메뉴
+    val cmsData: String,
+    val appInfo: String,
+    val isAutoLogin: Boolean, // 자동로그인설정여부
+    val lastLogin: String // 자동로그인설정여부
 ) {
     companion object {
         fun create(context: Context) {

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Study Push</string>
+
     <color name="transparent">#0000</color>
     <color name="black">#000</color>
     <color name="white">#fff</color>
@@ -17,20 +19,19 @@
     <dimen name="h4">15sp</dimen>
     <dimen name="h5">13sp</dimen>
     //스플레쉬 배경
-    <drawable name="c_hana_bg">#00d89c</drawable>
-    <color name="c_hana_bg">#00d89c</color>
-    <color name="c_hana_lite">#01ba87</color>
-    <color name="c_hana">#009688</color>
-    <color name="c_hana_dark">#00796b</color>
-    <color name="c_hana_accent">#00d89c</color>
-    <color name="c_hana_disable">#b4bdc6</color>
-    <color name="text_hana_white">#fff</color>
-    <color name="text_hana_black">#333</color>
+    <color name="primary">#9C27B0</color>
+    <color name="primary_dark">#7B1FA2</color>
+    <color name="primary_light">#E1BEE7</color>
+    <color name="accent">#7C4DFF</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
 
     <style name="BTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/c_hana</item>
-        <item name="colorPrimaryDark">@color/c_hana_dark</item>
-        <item name="colorAccent">@color/c_hana_accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
         <item name="android:windowBackground">@drawable/white</item>
         <!--<item name="android:textViewStyle">@style/TextViewStyle</item>-->
         <!--<item name="android:buttonStyle">@style/ButtonStyle</item>-->
