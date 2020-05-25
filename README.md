@@ -8,7 +8,9 @@
 2. 스터디 활동 작성
 
 ## What's new?
-현재 개발중 서버부분 먼저 개발중임
+현재 개발중 서버부분 먼저 개발중임   
+서버 부분은 아래 링크에서 개발중   
+https://github.com/eastar-dev/EastarStudyLogForSpringBoot
 
 ## License 
  ```code
