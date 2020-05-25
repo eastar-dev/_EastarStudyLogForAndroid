@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/BTheme">
+        <activity
+            android:name="dev.eastar.studypush.ui.login.Login"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
