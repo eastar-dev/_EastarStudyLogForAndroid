@@ -9,7 +9,7 @@ import android.log.Log
 /** 기본설정은 운영기준*/
 object NN {
 
-    @JvmField var HOST             = "https://smart.kebhana.com"
+    @JvmField var HOST             = "https://localhost"
     @JvmField var Authorization    = "key=AAAA-X6hxEw:APA91bF4HfB1HH-xEZm92DEvGfptstiykL9SSYEZOnP4-1iCLTDLttpZQVPJH5rm5uednhRhAQIYSTeQON0joiEwYWTsfjqYO0-XsvXDvX4vRp-p1W7JvBrLymscG3mEBZUdDuycxxoT"
 
 
@@ -33,19 +33,11 @@ object NN {
     fun apply(context: Context, lastServer: BN) {
         when (lastServer) {
             BN.REAL -> {
-                HOST             = "https://smart.kebhana.com"
-                Authorization    = "key=AAAA-X6hxEw:APA91bF4HfB1HH-xEZm92DEvGfptstiykL9SSYEZOnP4-1iCLTDLttpZQVPJH5rm5uednhRhAQIYSTeQON0joiEwYWTsfjqYO0-XsvXDvX4vRp-p1W7JvBrLymscG3mEBZUdDuycxxoT"
-            }
-            BN.STG -> {
-                HOST             = "https://stg11-smart.kebhana.com:18080"
+                HOST             = "https://localhost"
                 Authorization    = "key=AAAA-X6hxEw:APA91bF4HfB1HH-xEZm92DEvGfptstiykL9SSYEZOnP4-1iCLTDLttpZQVPJH5rm5uednhRhAQIYSTeQON0joiEwYWTsfjqYO0-XsvXDvX4vRp-p1W7JvBrLymscG3mEBZUdDuycxxoT"
             }
             BN.DEV -> {
-                HOST             = "https://dev12-mbp.hanabank.com:18080"
-                Authorization    = "key=AAAA-X6hxEw:APA91bF4HfB1HH-xEZm92DEvGfptstiykL9SSYEZOnP4-1iCLTDLttpZQVPJH5rm5uednhRhAQIYSTeQON0joiEwYWTsfjqYO0-XsvXDvX4vRp-p1W7JvBrLymscG3mEBZUdDuycxxoT"
-            }
-            BN.DEV2 -> {
-                HOST             = "https://211.32.31.146:18080"
+                HOST             = "https://localhost:18080"
                 Authorization    = "key=AAAA-X6hxEw:APA91bF4HfB1HH-xEZm92DEvGfptstiykL9SSYEZOnP4-1iCLTDLttpZQVPJH5rm5uednhRhAQIYSTeQON0joiEwYWTsfjqYO0-XsvXDvX4vRp-p1W7JvBrLymscG3mEBZUdDuycxxoT"
             }
         }

@@ -1,6 +1,8 @@
 package dev.eastar.studypush.data
 
 import dev.eastar.studypush.data.model.LoggedInUser
+import retrofit2.http.POST
+import smart.net.Net
 import java.io.IOException
 
 /**
@@ -8,9 +10,15 @@ import java.io.IOException
  */
 class LoginDataSource {
 
-    fun login(username: String, password: String): Result<LoggedInUser> {
+    @POST("login")
+    fun login(
+        @retrofit2.http.Field("studyGroup") studyGroup: String,
+        @retrofit2.http.Field("username") username: String,
+        @retrofit2.http.Field("password") password: String
+    ): Result<LoggedInUser> {
         try {
-            // TODO: handle loggedInUser authentication
+            Net.create<LoginDataSource>().login(studyGroup, username, password)
+
             val fakeUser = LoggedInUser(java.util.UUID.randomUUID().toString(), "Jane Doe")
             return Result.Success(fakeUser)
         } catch (e: Throwable) {

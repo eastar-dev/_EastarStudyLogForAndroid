@@ -80,16 +80,18 @@ class Login : BActivity() {
 
         bb.password.setOnEditorActionListener { _, actionId, _ ->
             when (actionId) {
-                EditorInfo.IME_ACTION_DONE ->
-                    loginViewModel.login(bb.username.text.toString(), bb.password.text.toString())
+                EditorInfo.IME_ACTION_DONE -> login()
+
             }
             false
         }
 
-        bb.login.setOnClickListener {
-            bb.loading.visibility = View.VISIBLE
-            loginViewModel.login(bb.username.text.toString(), bb.password.text.toString())
-        }
+        bb.login.setOnClickListener { login() }
+    }
+
+    override fun login() {
+        bb.loading.visibility = View.VISIBLE
+        loginViewModel.login(bb.studyGroup.text.toString(), bb.username.text.toString(), bb.password.text.toString())
     }
 
     private fun updateUiWithUser(model: LoggedInUserView) {

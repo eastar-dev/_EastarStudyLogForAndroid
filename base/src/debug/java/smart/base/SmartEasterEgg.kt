@@ -15,13 +15,6 @@ class SmartEasterEgg(val activity: Activity) {
         restart()
     }
 
-    fun A_DEV2_SERVER() {
-        val prev = BN.getLastServer(activity).name
-        NN.apply(activity, BN.DEV2)
-        toast("$prev->${BN.DEV2.name}")
-        restart()
-    }
-
     fun A_STG_SERVER() {
         val prev = BN.getLastServer(activity).name
         NN.apply(activity, BN.STG)
