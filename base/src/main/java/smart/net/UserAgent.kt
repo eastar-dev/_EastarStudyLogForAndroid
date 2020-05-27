@@ -21,7 +21,6 @@ object UserAgent {
                 "brand" to BRAND,
                 "model" to MODEL,
                 "version" to RELEASE,
-                "deviceId" to PP.androidId,
                 "phoneNumber" to "",
                 "countryIso" to "",
                 "telecom" to context.networkOperatorName,
@@ -32,9 +31,6 @@ object UserAgent {
                 "appName" to context.appName,
                 "deviceWidth" to "context.WIDTH_PIXELS",
                 "deviceHeight" to "context.HEIGHT_PIXELS",
-                "uid" to PP.androidId,
-                "hUid" to PP.appUuid,
-                "etcStr" to "",
                 "User-Agent" to kotlin.runCatching { WebSettings.getDefaultUserAgent(context) }.getOrDefault("")
             )
         )

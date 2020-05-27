@@ -18,16 +18,9 @@ import android.view.inputmethod.InputMethodManager
 import androidx.core.content.ContextCompat
 import androidx.core.content.getSystemService
 import androidx.fragment.app.Fragment
-import dev.eastar.ktx.startActivity
-import dev.eastar.ktx.toIntent
 import java.io.File
 
 class KK
-
-fun View.setIntent(intent: Intent) = setOnClickListener { it.context.startActivity(intent) }
-fun View.setIntent(clazz: Class<out Activity>, vararg keyValue: Any) = setOnClickListener { it.context.startActivity(clazz, *keyValue.toPair()) }
-fun Context.toIntent(clazz: Class<out Activity>, vararg keyValue: Any): Intent = toIntent(clazz, *keyValue.toPair())
-
 
 fun Activity.hideKeyboard() = window.decorView.hideKeyboard()
 fun Fragment.hideKeyboard() = requireActivity().hideKeyboard()

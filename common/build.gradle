@@ -49,7 +49,7 @@ dependencies {
     api 'com.jakewharton.rxbinding2:rxbinding:2.2.0'
 
     api 'com.github.eastar-dev:EastarPermission:2.2.2'
-    api 'com.github.eastar-dev:EastarKtx:1.0.5'
+    api 'com.github.eastar-dev:EastarKtx:1.0.7'
     debugApi 'com.github.eastar-dev.EastarLog2:log:2.0.0'
     releaseApi 'com.github.eastar-dev.EastarLog2:logNoOp:2.0.0'
 }

@@ -9,6 +9,11 @@ import androidx.annotation.StringRes
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.jakewharton.rxbinding2.widget.RxTextView
+import dev.eastar.ktx.toast
+import dev.eastar.operaxinterceptor.event.OperaXEvent
+import dev.eastar.operaxinterceptor.event.OperaXEventObservable
+import dev.eastar.operaxinterceptor.event.OperaXEventObserver
+import dev.eastar.operaxinterceptor.event.OperaXEvents
 import dev.eastar.studypush.R
 import dev.eastar.studypush.databinding.LoginBinding
 import smart.base.BActivity
@@ -63,7 +68,7 @@ class Login : BActivity() {
                     bb.username.text.toString(),
                     bb.password.text.toString()
                 )
-            }
+            }.autoDispose()
 
         RxTextView.afterTextChangeEvents(bb.password)
             .subscribe {
@@ -71,15 +76,12 @@ class Login : BActivity() {
                     bb.username.text.toString(),
                     bb.password.text.toString()
                 )
-            }
+            }.autoDispose()
 
         bb.password.setOnEditorActionListener { _, actionId, _ ->
             when (actionId) {
                 EditorInfo.IME_ACTION_DONE ->
-                    loginViewModel.login(
-                        bb.username.text.toString(),
-                        bb.password.text.toString()
-                    )
+                    loginViewModel.login(bb.username.text.toString(), bb.password.text.toString())
             }
             false
         }
@@ -93,15 +95,18 @@ class Login : BActivity() {
     private fun updateUiWithUser(model: LoggedInUserView) {
         val welcome = getString(R.string.welcome)
         val displayName = model.displayName
-        // TODO : initiate successful logged in experience
-        Toast.makeText(
-            applicationContext,
-            "$welcome $displayName",
-            Toast.LENGTH_LONG
-        ).show()
+        toast("$welcome $displayName")
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
-        Toast.makeText(applicationContext, errorString, Toast.LENGTH_SHORT).show()
+        toast(errorString)
+        OperaXEventObservable.notify(OperaXEvents.Exited)
+    }
+
+    override fun onBackPressedEx(): Boolean {
+        if (super.onBackPressedEx())
+            return true
+        OperaXEventObservable.notify(OperaXEvents.Exited)
+        return true
     }
 }

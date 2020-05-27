@@ -36,7 +36,6 @@ object DD {
         displayInfo(context)
         setWebContentsDebuggingEnabled()
         uncaughtExceptionHandler()
-        uuid(context)
         //Session.addRef()
 //        hashkeyForDaumMap(context)
 //        sacnFolder(context.filesDir.parentFile, "")
@@ -45,12 +44,6 @@ object DD {
 //        setNotification(context)
 //        Pref.CREATE(context)
 //        Log.e(Pref.get(Pref.__PUSH_TOKEN))
-    }
-
-    @SuppressLint("HardwareIds")
-    private fun uuid(context: Context) {
-        Log.e("ANDROID_ID : ${PP.androidId}")
-        Log.e("UUID : ${PP.appUuid}")
     }
 
     //@SuppressLint("WebViewApiAvailability")
