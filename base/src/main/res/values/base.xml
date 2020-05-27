@@ -18,7 +18,7 @@
     <dimen name="h3">17sp</dimen>
     <dimen name="h4">15sp</dimen>
     <dimen name="h5">13sp</dimen>
-    //스플레쉬 배경
+
     <color name="primary">#9C27B0</color>
     <color name="primary_dark">#7B1FA2</color>
     <color name="primary_light">#E1BEE7</color>
@@ -28,16 +28,11 @@
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
 
-    <style name="BTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="BTheme" parent="@style/Theme.AppCompat.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
         <item name="android:windowBackground">@drawable/white</item>
-        <!--<item name="android:textViewStyle">@style/TextViewStyle</item>-->
-        <!--<item name="android:buttonStyle">@style/ButtonStyle</item>-->
-        <!--<item name="android:editTextStyle">@style/EditTextStyle</item>-->
-        <!--<item name="android:radioButtonStyle">@style/RadioButtonStyle</item>-->
-        <!--<item name="android:checkboxStyle">@style/CheckboxStyle</item>-->
     </style>
 
     <style name="BTheme.Transparent">
@@ -52,7 +47,7 @@
         <item name="windowActionBar">false</item>
     </style>
 
-    <style name="BTheme.Transparent.Dialog" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="BTheme.Transparent.Dialog">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -63,11 +58,13 @@
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>
-    <!--<style name="BTheme.Splash">-->
-    <!--<item name="android:windowBackground">@drawable/c_hana_bg</item>-->
-    <!--<item name="android:windowFullscreen">true</item>-->
-    <!--<item name="android:windowContentOverlay">@null</item>-->
-    <!--</style>-->
+
+    <style name="BTheme.Splash">
+        <item name="android:windowBackground">@drawable/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
     <style name="BTheme.Dialog">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -75,10 +72,6 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
-    <style name="CardViewStyle" parent="CardView">
-        <item name="cardCornerRadius">8dp</item>
-        <item name="cardElevation">4dp</item>
-    </style>
 </resources>
 
 
